@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import { useLocation } from "react-router-dom";
 
 import './ListingDogFilter.sass';
@@ -25,20 +25,14 @@ const ListingDogFilter = ({ dogs, pagination, setPagination, loading, listingRef
         }, 300);
     }, [location]);
 
-    useEffect(() => {
-        if (firstRender.current) {
-            firstRender.current = false; // Marca que não é mais a primeira renderização
-            return; 
-        }
-
+    const handleClickPagination = () => {
         const dogsContainer = document.querySelector('.leftGroup');
         if (!dogsContainer) return;
         
         setTimeout(() => {
             dogsContainer.scrollIntoView({ behavior: 'smooth' });
         }, 300);
-    }, [pagination, filters])
-    
+    }
 
 
 return (
@@ -84,6 +78,7 @@ return (
                         limit={6} // Número de itens por página
                         activePage={currentPage}
                         onChangePage={(newPage) => setPagination(prev => ({ ...prev, currentPage: newPage }))}
+                        onClick={handleClickPagination}
                     />
                 </div>
             </div>

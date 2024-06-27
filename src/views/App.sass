@@ -3,7 +3,7 @@ $secondary-color: #FCEED5
 
 @mixin btn-primary($font-weight, $font-size)
    background-color: $primary-color
-   padding: 12px 28px
+   padding: 10px 18px 
    color: white
    border-radius: 57px
    text-decoration: none
@@ -11,13 +11,15 @@ $secondary-color: #FCEED5
    font-size: $font-size
    cursor: pointer
    transition: all .5s
+   @media all and (min-width: 768px)
+      padding: 12px 28px 
 
    &:hover
       background-color: darken($primary-color, 10%)
 
 @mixin btn-secondary($font-weight, $font-size)
    background-color: $secondary-color
-   padding: 12px 28px
+   padding: 10px 18px
    color: $primary-color
    border: 1px solid $primary-color
    border-radius: 57px
@@ -26,6 +28,9 @@ $secondary-color: #FCEED5
    font-size: $font-size
    cursor: pointer
    transition: all .5s
+   @media all and (min-width: 768px)
+      padding: 12px 28px 
+
 
    &:hover
       background-color: darken($secondary-color, 10%)

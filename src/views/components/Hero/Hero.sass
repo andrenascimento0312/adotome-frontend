@@ -21,7 +21,7 @@
         .hero-left
             color: $primary-color
             min-width: 45%
-            
+
             h1
                 font-size: 2em
                 font-weight: bold
@@ -43,10 +43,14 @@
                 gap: 20px
 
                 .btn-primary
-                    @include btn-primary(400, 16px)
+                    @include btn-primary(400, 14px)
+                    @media all and (min-width: 768px)
+                        @include btn-primary(400, 16px)
 
                 .btn-secondary
-                    @include btn-secondary(400, 16px)
+                    @include btn-secondary(400, 14px)
+                    @media all and (min-width: 768px)
+                        @include btn-primary(400, 16px)
         .hero-right
             padding-bottom: 0
             img
@@ -58,17 +62,16 @@
 @media all and (min-width: 1024px)
     .hero-container
         background-position: calc(80% + 50px) 150px
-        
+
         .hero-content
             flex-direction: row
 
             .hero-left
                 h1
                     font-size: 3.75em
-                
+
                 h2
                     font-size: 2.87em
 
                 p
                     max-width: 480px
-
