@@ -48,7 +48,6 @@ const SingleDog = () => {
                 </div>
 
                 <div className="singleColRight">
-                    {/* <DogBreadcrumb separator={<AngleRightIcon />} /> */}
 
                     <h1>{dog?.dogName}</h1>
                     <a href="" className="btn-primary">Contatar</a>

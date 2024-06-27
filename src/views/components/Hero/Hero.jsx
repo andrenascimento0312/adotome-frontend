@@ -19,8 +19,8 @@ const Hero = () => {
                             different pets that can meet your needs!
                         </p>
                         <div className="buttons-group">
-                            <a className="btn-secondary" href="#">Ver Intro</a>
-                            <a className="btn-primary" href="#">Procurar cachorro!</a>
+                            {/* <a className="btn-secondary" href="#">Ver Intro</a> */}
+                            <a className="btn-primary" href="#doguinhos">Procurar cachorro!</a>
                         </div>
                     </div>
                     <div className="hero-right">
