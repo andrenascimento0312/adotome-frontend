@@ -2,9 +2,6 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { Placeholder } from 'rsuite';
 
-import DogBreadcrumb from "../components/DogBreadcrumb/DogBreadcrumb";
-import AngleRightIcon from '@rsuite/icons/legacy/AngleRight';
-
 import '../App.sass';
 
 const SingleDog = () => {
