@@ -1,0 +1,70 @@
+@import '../../App.sass'
+
+.transparent-header
+    background: transparent!important
+
+.header-flex
+    display: none
+    background: $secondary-color
+
+.header-flex-mobile
+    display: flex
+    justify-content: space-between
+    flex-direction: row
+    z-index: 2
+    align-items: center
+    padding: 20px
+
+    .menu-icon
+        cursor: pointer
+    // align-items: center
+
+.header-dropdown
+    position: absolute
+    display: flex
+    width: 100%
+    top: 60px
+    flex-direction: column
+    gap: 25px
+    margin-top: 20px
+    background-color: white
+    padding: 15px 10px
+
+    &.active
+        animation: slide-in-top 0.5s forwards
+
+    &.inactive
+        animation: slide-out-top 0.8s forwards
+
+    .btn-primary
+        @include btn-primary(700, 14px)
+        text-align: center
+
+    .item
+        color: $primary-color
+        font-weight: bold
+
+@media all and (min-width: 768px)
+    .header-flex-mobile
+        display: none
+
+    .header-flex
+        display: flex
+        justify-content: space-between
+        flex-direction: row
+        margin-top: 20px
+        gap: 0px
+        align-items: center
+
+        .btn-primary
+            @include btn-primary(700, 16px)
+
+        .header-left
+            display: flex
+            gap: 30px
+            flex-direction: row
+            align-items: center
+
+            .item
+                color: $primary-color
+                font-weight: bold
