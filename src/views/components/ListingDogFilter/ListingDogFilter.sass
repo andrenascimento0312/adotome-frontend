@@ -1,0 +1,26 @@
+@import "rsuite/dist/rsuite.css"
+@import '../../App.sass'
+
+.listingDogFilter
+    padding: 50px 0
+    
+    @media all and (min-width: 768px)
+        display: flex
+        gap: 70px
+    h5
+        color: $primary-color
+
+    .leftGroup
+        padding: 20px
+        .dogsGroup
+            display: grid
+            gap: 20px
+
+            @media (max-width: 576px) // Mobile
+                grid-template-columns: 1fr
+
+            @media (min-width: 577px) and (max-width: 992px) // Tablets e small desktops
+                grid-template-columns: 1fr 1fr
+
+            @media (min-width: 993px) // Desktops maiores
+                grid-template-columns: 1fr 1fr 1fr
