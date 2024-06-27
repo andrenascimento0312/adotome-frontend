@@ -1,0 +1,47 @@
+@import '../../App.sass'
+
+footer
+    background-color: $secondary-color
+
+    .footer-up
+        display: flex
+        padding: 40px 0
+        justify-content: space-between
+        flex-direction: column
+        border-bottom: 1px solid #CCD1D2
+
+        .footer-left
+            display: flex
+            gap: 15px
+            justify-content: start
+            flex-direction: column
+
+            .item
+                color: $primary-color
+                font-weight: bold
+
+    .footer-down
+        padding: 40px 0
+        display: flex
+        align-items: center
+        justify-content: space-between
+        flex-direction: column-reverse
+        gap: 45px
+
+        .copy, .links
+            color: #667479
+            font-size: 12px
+
+@media all and (min-width: 768px)
+    footer
+        .footer-up
+            flex-direction: row
+            align-items: center
+
+            .footer-left
+                flex-direction: row
+        
+        .footer-down
+            flex-direction: row
+
+                
