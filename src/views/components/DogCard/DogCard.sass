@@ -1,0 +1,41 @@
+@import '../../App.sass'
+
+.dogCard
+    border-radius: 12px
+    box-shadow: 0px 5px 10px 1px rgba(0,0,0,0.11)
+    padding: 10px 15px
+    height: 380px
+    transition: all .5s
+    @media all and (min-width: 768px)
+        height: 330px
+        max-width: max-content
+
+    &:hover
+        transform: translateY(-7px)
+
+    .dogImage
+        img
+            object-fit: cover
+            object-position: 100% 10%
+            height: 300px
+            width: 100%
+            @media all and (min-width: 768px)
+                max-height: 265px
+                width: revert-layer
+
+    .dogContent
+        a
+            text-decoration: none
+        h3
+            font-size: 1.2em
+            color: $primary-color
+
+        .dogInfo
+            display: flex
+            gap: 10px
+
+            .dogAge, .dogSize
+                color: #667479
+                font-size: 12px
+                font-weight: 600
+
