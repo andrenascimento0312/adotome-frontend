@@ -1,0 +1,44 @@
+@import "rsuite/dist/rsuite.css"
+@import '../../App.sass'
+
+.filter-container
+    width: 100vw
+    // display: none
+    // position: absolute
+    background: white
+    margin-bottom: 50px
+
+    @media all and (min-width: 768px)
+        position: relative
+        max-width: 280px
+        min-width: 280px
+        margin-bottom: 0
+
+    &.visible
+        display: block
+
+    h2
+        color: $primary-color
+    h4
+        color: $primary-color
+        margin-top: 15px
+
+    .rs-checkbox-control
+        &::before
+            border: 1px solid $primary-color
+
+    .rs-checkbox-checked .rs-checkbox-control .rs-checkbox-inner, .rs-checkbox-indeterminate .rs-checkbox-control .rs-checkbox-inner
+        &::before
+            background: $primary-color
+            border: 1px solid $primary-color
+
+.rs-slider-progress-bar
+    background: $primary-color
+
+.rs-slider-handle
+    &::before
+        border: 2px solid $primary-color
+
+@media all and (min-width: 768px)
+    .filter-container
+        display: block
