@@ -2,7 +2,7 @@
 @import '../../App.sass'
 
 .filter-container
-    width: 100vw
+    // width: 100vw
     // display: none
     // position: absolute
     background: white
@@ -22,6 +22,18 @@
     h4
         color: $primary-color
         margin-top: 15px
+    
+    .range-slider
+        max-width: 300px
+        
+        @media all and (min-width: 380px)
+            max-width: 350px
+
+        @media all and (min-width: 480px)
+            max-width: 450px
+        
+        @media all and (min-width: 768px)
+            max-width: auto
 
     .rs-checkbox-control
         &::before
@@ -39,6 +51,4 @@
     &::before
         border: 2px solid $primary-color
 
-@media all and (min-width: 768px)
-    .filter-container
-        display: block
+

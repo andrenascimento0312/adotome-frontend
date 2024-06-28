@@ -73,9 +73,9 @@ const SingleDog = () => {
                     </div>
 
 
-                    <div className="infoGroup">
-                        <div className="left">Descrição</div>
-                        <div className="right">: {dog?.description}</div>
+                    <div className="infoGroup block">
+                        <div className="up">Sobre {dog?.dogName}</div>
+                        <div className="down" dangerouslySetInnerHTML={{ __html: dog?.description }}></div>
                     </div>
                 </div>
             </>

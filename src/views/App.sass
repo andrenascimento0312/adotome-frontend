@@ -35,6 +35,9 @@ $secondary-color: #FCEED5
    &:hover
       background-color: darken($secondary-color, 10%)
 
+#root
+   overflow-x: hidden
+
 body
    font-family: 'Montserrat'
    overflow-x: hidden!important
@@ -105,6 +108,7 @@ body
 .singleGroup
    display: flex
    flex-direction: column
+   padding: 70px 0!important
 
    .placeholder.rs-placeholder.rs-placeholder-graph.rs-placeholder-active
       height: 600px!important
@@ -128,12 +132,22 @@ body
          margin-bottom: 15px
          max-width: max-content
 
+      .infoGroup.block
+         display: block
+         .up
+            font-weight: 600
+            margin-bottom: 20px
+         .down
+            line-height: 1.5em
+
       .infoGroup
          display: flex
          flex-direrection: row
          border-bottom: 1px solid lightgray
          padding: 15px 0
          font-weight: 500
+         .left
+            font-weight: 600
          .left, .right
             flex: 1
 

@@ -45,14 +45,13 @@ const Header = ({ className }) => {
             </div>
 
 
-            {menuMobile && (
-                <div className={`header-dropdown ${menuMobile ? 'active' : 'inactive'}`}>
-                    <Link onClick={() => setMenuMobile(false)} className="item" to="/">Home</Link>
-                    <Link onClick={() => setMenuMobile(false)} className="item" to="/#doguinhos">Cachorrinhos</Link>
-                    {/* <Link onClick={() => setMenuMobile(false)} className="item">Sobre</Link> */}
-                    {/* <a onClick={() => setMenuMobile(false)} className="btn-primary" href="#">Junte-se a nós!</a> */}
-                </div>
-            )}
+            <div className={`header-dropdown ${menuMobile ? 'active' : 'inactive'}`}>
+                <Link onClick={() => setMenuMobile(false)} className="item" to="/">Home</Link>
+                <Link onClick={() => setMenuMobile(false)} className="item" to="/#doguinhos">Cachorrinhos</Link>
+                {/* <Link onClick={() => setMenuMobile(false)} className="item">Sobre</Link> */}
+                {/* <a onClick={() => setMenuMobile(false)} className="btn-primary" href="#">Junte-se a nós!</a> */}
+            </div>
+
 
 
 
