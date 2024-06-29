@@ -1,8 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { RangeSlider, Checkbox, CheckboxGroup } from 'rsuite';
 import axios from "axios";
 
+import styleContext from "../../context/styleContext";
+
 import "./Filter.sass";
+import closeImage from '../../../images/close.png';
 
 const Filter = ({ className, filters, setFilters }) => {
     const [range, setRange] = useState([1, 5]);
@@ -10,6 +13,7 @@ const Filter = ({ className, filters, setFilters }) => {
     const [selectedSize, setSelectedSize] = useState([]);
     const [selectedTaxonomy, setSelectedTaxonomy] = useState([]);
     const [taxonomies, setTaxonomies] = useState([]);
+    const {style, setStyle} = useContext(styleContext)
 
     const fetchTaxonomies = async () => {
         try {
@@ -50,7 +54,12 @@ const Filter = ({ className, filters, setFilters }) => {
     return (
         <>
             <div className={`filter-container ${className}`}>
-                <h2>Filtros</h2>
+                <div className="title-section">
+                    <h2>Filtros</h2>
+                    <div className="close" onClick={() => setStyle(!style)}>
+                        <img src={closeImage} width={30} alt="close" />
+                    </div>
+                </div>
 
                 <div className="filters">
                     <div className="filter-section">

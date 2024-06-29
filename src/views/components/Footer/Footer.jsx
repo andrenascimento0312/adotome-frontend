@@ -28,7 +28,7 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className="footer-down">
-                        <div className="copy">@ 2022 Adote-me. Todos os direitos reservados</div>
+                        <div className="copy">@ 2024 Adote-me. Todos os direitos reservados</div>
                         <div className="logo">
                             <img src={logo2} width="115" alt="" srcset="" />
                         </div>

@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { Placeholder } from 'rsuite';
 
+import DogBreadcrumb from "../components/DogBreadcrumb/DogBreadcrumb";
+
 import '../App.sass';
 
 const SingleDog = () => {
@@ -48,6 +50,8 @@ const SingleDog = () => {
                 </div>
 
                 <div className="singleColRight">
+
+                    <DogBreadcrumb dogName={dog?.dogName} />
 
                     <h1>{dog?.dogName}</h1>
                     <a href="" className="btn-primary">Contatar</a>

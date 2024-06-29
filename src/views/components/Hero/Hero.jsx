@@ -11,12 +11,12 @@ const Hero = () => {
             <div className="hero-container">
                 <div className="container hero-content">
                     <div className="hero-left">
-                        <h1>One More Friend</h1>
-                        <h2>Thousands More Fun!</h2>
+                        <h1>Um amigo a mais</h1>
+                        <h2>Milhares de vezes mais diversão!</h2>
                         <p>
-                            Having a pet means you have more joy, a new frind, a happy
-                            person who will always be with you to have fun. We have 200+
-                            different pets that can meet your needs!
+                            Ter um animal de estimação significa ter mais alegria, um novo amigo, uma 
+                            pessoa feliz que estará
+                            sempre com você para se divertir.
                         </p>
                         <div className="buttons-group">
                             {/* <a className="btn-secondary" href="#">Ver Intro</a> */}

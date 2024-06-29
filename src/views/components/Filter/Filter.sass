@@ -2,11 +2,14 @@
 @import '../../App.sass'
 
 .filter-container
-    // width: 100vw
-    // display: none
-    // position: absolute
+    width: 100vw
+    height: 100vh
+    position: fixed
     background: white
     margin-bottom: 50px
+    top: 0
+    left: 0
+    padding: 20px
 
     @media all and (min-width: 768px)
         position: relative
@@ -15,8 +18,24 @@
         margin-bottom: 0
 
     &.visible
-        display: block
+        animation: slide-in-top 0.5s forwards
+        @media all and (min-width: 768px)
+            animation: none
 
+    &.invisible
+        animation: slide-out-top 0.8s forwards
+        @media all and (min-width: 768px)
+            animation: none
+
+    .title-section
+        display: flex
+        justify-content: space-between
+        align-items: center
+        max-width: 85%
+        @media all and (min-width: 768px)
+            .close
+                display: none
+                
     h2
         color: $primary-color
     h4
