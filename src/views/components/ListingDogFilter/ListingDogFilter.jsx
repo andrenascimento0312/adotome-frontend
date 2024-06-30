@@ -14,7 +14,7 @@ import styleContext from "../../context/styleContext";
 const ListingDogFilter = ({ dogs, pagination, setPagination, loading, listingRef, filters, setFilters }) => {
 
     const { currentPage, totalPosts, totalPages } = pagination;
-    const [style, setStyle] = useState(false)
+    const [style, setStyle] = useState('hidden')
     const location = useLocation();
     const firstRender = useRef(true);
 
@@ -51,7 +51,7 @@ const ListingDogFilter = ({ dogs, pagination, setPagination, loading, listingRef
                         <MobileFilter />
 
                         <Filter
-                            className={style ? 'visible' : 'invisible'}
+                            className={style}
                             filters={filters}
                             setFilters={setFilters}
                         />

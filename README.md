@@ -1,3 +1,8 @@
+# Oi
+
+Gosto muito de cachorro, então tive a ideia de fazer um app web de adoção de cachorro, é ficticio, ok? Mas a ideia é massa =D. Eu consumo a API de um WordPress, ou seja to usando WP Headless... o projeto do endpoint da API do WordPress desse projeto, está aqui: 
+* URL: https://github.com/andrenascimento0312/api-adoteme
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

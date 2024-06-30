@@ -26,6 +26,9 @@
         animation: slide-out-top 0.8s forwards
         @media all and (min-width: 768px)
             animation: none
+    
+    &.hidden
+        display: none
 
     .title-section
         display: flex
@@ -35,22 +38,22 @@
         @media all and (min-width: 768px)
             .close
                 display: none
-                
+
     h2
         color: $primary-color
     h4
         color: $primary-color
         margin-top: 15px
-    
+
     .range-slider
         max-width: 300px
-        
+
         @media all and (min-width: 380px)
             max-width: 350px
 
         @media all and (min-width: 480px)
             max-width: 450px
-        
+
         @media all and (min-width: 768px)
             max-width: auto
 
@@ -69,5 +72,3 @@
 .rs-slider-handle
     &::before
         border: 2px solid $primary-color
-
-

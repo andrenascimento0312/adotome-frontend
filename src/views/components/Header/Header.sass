@@ -23,7 +23,7 @@
 
 .header-dropdown
     position: absolute
-    display: flex
+    display: none
     width: 100%
     top: 60px
     flex-direction: column
@@ -33,6 +33,7 @@
     padding: 15px 10px
 
     &.active
+        display: flex
         animation: slide-in-top 0.5s forwards
         @media all and (min-width: 768px)
             animation: none

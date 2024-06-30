@@ -56,7 +56,7 @@ const Filter = ({ className, filters, setFilters }) => {
             <div className={`filter-container ${className}`}>
                 <div className="title-section">
                     <h2>Filtros</h2>
-                    <div className="close" onClick={() => setStyle(!style)}>
+                    <div className="close" onClick={() => setStyle('invisible')}>
                         <img src={closeImage} width={30} alt="close" />
                     </div>
                 </div>

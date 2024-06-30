@@ -12,7 +12,7 @@ const MobileFilter = () => {
         <>
             <div className="mobile-filter-container">
                 <div className="item">Filtros:</div>
-                <div className="item" onClick={() => setStyle(!style)}>
+                <div className="item" onClick={() => setStyle('visible')}>
                     <img src={filterImage} width={90} alt="Filter" />
                 </div>
             </div>
